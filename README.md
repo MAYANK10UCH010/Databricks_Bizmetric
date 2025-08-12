@@ -3,7 +3,6 @@
 - Mosiac AI & Gen AI Using Databricks
 - MLOps Concepts on Databricks
 
-
 # Overall 
 - ML, DL - Concepts
 - MLFlow
