@@ -149,3 +149,5 @@ A structured roadmap to get started with:
 - 💬 [Databricks Community](https://community.databricks.com/)
 - 🧠 [Databricks Academy Courses](https://academy.databricks.com/)
 
+---
+ACID (Atomicity, Consistency, Isolation, and Durability) architecture 
