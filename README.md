@@ -151,7 +151,7 @@ A structured roadmap to get started with:
 
 ---
 ## Abbreviations
-ACID : (Atomicity, Consistency, Isolation, and Durability) architecture 
-GDPR : General Data Protection and Regulation
-CCPA : Colifornia Consumer Privacy Act
-CDC  : Change Data Capture
+ACID : (Atomicity, Consistency, Isolation, and Durability) architecture   </br>
+GDPR : General Data Protection and Regulation                             </br>
+CCPA : Colifornia Consumer Privacy Act                                    </br>
+CDC  : Change Data Capture                                                </br>
