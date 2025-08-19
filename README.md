@@ -150,4 +150,8 @@ A structured roadmap to get started with:
 - 🧠 [Databricks Academy Courses](https://academy.databricks.com/)
 
 ---
-ACID (Atomicity, Consistency, Isolation, and Durability) architecture 
+## Abbreviations
+ACID : (Atomicity, Consistency, Isolation, and Durability) architecture 
+GDPR : General Data Protection and Regulation
+CCPA : Colifornia Consumer Privacy Act
+CDC  : Change Data Capture
