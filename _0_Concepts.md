@@ -93,3 +93,41 @@ They bring **warehouse reliability (ACID, schema evolution, time travel)** to da
 - **Delta** → Use `delta-examples` repo for hands-on notebooks; explore `delta-rs` for cross-platform  
 
 ---
+
+## 🏗️ Lakehouse Architecture Flow (Mermaid Diagram)
+
+```mermaid
+flowchart TD
+    subgraph Storage["Data Lake Storage (S3 / ADLS / GCS / HDFS)"]
+        raw["Raw Data (Parquet / ORC / Avro)"]
+    end
+
+    subgraph TableFormats["Lakehouse Table Formats"]
+        Hudi["Apache Hudi\n(Upserts, CDC, Incremental)"]
+        Iceberg["Apache Iceberg\n(Analytics, Governance, Snapshots)"]
+        Delta["Delta Lake\n(Spark Native, ML + BI Integration)"]
+    end
+
+    subgraph Engines["Query & Processing Engines"]
+        Spark["Apache Spark / Databricks"]
+        Flink["Apache Flink"]
+        Trino["Trino / Presto"]
+        Hive["Apache Hive"]
+        BI["BI Tools (Tableau / Power BI / Superset)"]
+        ML["ML Frameworks (TensorFlow / PyTorch / MLflow)"]
+    end
+
+    raw --> Hudi
+    raw --> Iceberg
+    raw --> Delta
+
+    Hudi --> Spark
+    Hudi --> Flink
+
+    Iceberg --> Spark
+    Iceberg --> Trino
+    Iceberg --> Hive
+
+    Delta --> Spark
+    Delta --> BI
+    Delta --> ML
