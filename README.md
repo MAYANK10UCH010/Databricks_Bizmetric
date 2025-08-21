@@ -1,3 +1,17 @@
+# 🎥 Separate Videos Needed on Topics  
+
+📺 **YouTube Channel:**  
+[Databricks Playlist](https://www.youtube.com/watch?v=yd51vbzA570&list=PLz-qytj7eIWWRz_1hFSleVBwZAoD1eTqU&index=2)
+
+---
+
+## 📌 Topics for Separate Videos
+1. **Unity Catalog**  
+2. **Compute App**  
+3. **Databricks Assistant**  
+4. *(Add more topics as needed)*  
+
+
 # Databricks_Bizmetric
 - Databricks Auto ML 
 - Mosiac AI & Gen AI Using Databricks
