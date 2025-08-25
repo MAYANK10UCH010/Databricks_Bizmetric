@@ -168,5 +168,5 @@ A structured roadmap to get started with:
 ## Abbreviations
 ACID : (Atomicity, Consistency, Isolation, and Durability) architecture   </br>
 GDPR : General Data Protection and Regulation                             </br>
-CCPA : Colifornia Consumer Privacy Act                                    </br>
+CCPA : California Consumer Privacy Act                                    </br>
 CDC  : Change Data Capture                                                </br>
