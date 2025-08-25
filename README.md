@@ -7,10 +7,12 @@
 
 ## 📌 Topics for Separate Videos
 1. **Unity Catalog**  Three level hierarchy
-2. **Compute App**  
-3. **Databricks Assistant**
-4. AI/ML -> models 
-5. *(Add more topics as needed)*  
+2. **Compute App**
+3. Git -> Sparse Checkout
+4. Schedule -> Compute
+5. **Databricks Assistant**
+6. AI/ML -> models 
+7. *(Add more topics as needed)*  
 
 
 # Databricks_Bizmetric
