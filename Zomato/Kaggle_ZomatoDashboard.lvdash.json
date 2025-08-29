@@ -1,0 +1,228 @@
+{
+  "datasets": [
+    {
+      "name": "2f066506",
+      "displayName": "Dashboard_Ratings",
+      "queryLines": [
+        "SELECT `Country_Code`, `Rating_text`, total_restaurants\r\n",
+        "FROM zomato_summary\r\n"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "41fab552",
+      "displayName": "Dashboard_1",
+      "layout": [
+        {
+          "widget": {
+            "name": "0928a23a",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "2f066506",
+                  "fields": [
+                    {
+                      "name": "sum(Country_Code)",
+                      "expression": "SUM(`Country_Code`)"
+                    },
+                    {
+                      "name": "Rating_text",
+                      "expression": "`Rating_text`"
+                    },
+                    {
+                      "name": "sum(total_restaurants)",
+                      "expression": "SUM(`total_restaurants`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Rating_text",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "Rating_text"
+                },
+                "y": {
+                  "fieldName": "sum(total_restaurants)",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Sum of total_restaurants"
+                },
+                "color": {
+                  "fieldName": "sum(Country_Code)",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Sum of Country_Code"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Bar Chart ",
+                "description": "by Rating per Country"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 1,
+            "width": 3,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "eac50464",
+            "multilineTextboxSpec": {
+              "lines": [
+                ""
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 3,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "7fb38804",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "2f066506",
+                  "fields": [
+                    {
+                      "name": "percentile(total_restaurants, percentage=0_5)",
+                      "expression": "PERCENTILE(`total_restaurants`, 0.5)"
+                    },
+                    {
+                      "name": "sum(Country_Code)",
+                      "expression": "SUM(`Country_Code`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "percentile(total_restaurants, percentage=0_5)",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Tar Balls"
+                },
+                "label": {
+                  "show": true
+                },
+                "extra": [
+                  {
+                    "fieldName": "sum(Country_Code)",
+                    "displayName": "Sum of Country_Code"
+                  },
+                  {
+                    "fieldName": "percentile(total_restaurants, percentage=0_5)",
+                    "displayName": "50th Percentile of total_restaurants"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Pie Chart ",
+                "description": "Share of Ratings "
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 2,
+            "width": 3,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "09025640",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "2f066506",
+                  "fields": [
+                    {
+                      "name": "total_restaurants",
+                      "expression": "`total_restaurants`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "symbol-map",
+              "encodings": {
+                "coordinates": {
+                  "longitude": {
+                    "fieldName": "total_restaurants",
+                    "displayName": "total_restaurants"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 2,
+            "y": 8,
+            "width": 3,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "e6526359",
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-single-select",
+              "encodings": {},
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 1,
+            "width": 2,
+            "height": 1
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    }
+  }
+}
