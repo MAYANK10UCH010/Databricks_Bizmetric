@@ -13,6 +13,7 @@
   - [Visualization (Mermaid Diagram)](#mermaid-diagram)
   - [Visualization (ASCII Art)](#ascii-diagram-art-version)
 - [Z-Order Clustering](#z-order-clustering)
+- [Snowflake Table vs Delta Lake Tables](#difference-between-delta-tables-and-snowflake-tables)
 
 ---
 
@@ -301,3 +302,39 @@ flowchart TD
 OPTIMIZE zomato_delta_table
 ZORDER BY (Country_Code, Rating_text)
 ```
+#### 
+# Difference between Delta Tables and Snowflake Tables  
+
+Awesome question 🙌 — comparing Delta tables (Databricks) vs Snowflake tables is like comparing two different approaches to data storage and analytics. Let’s break it down in a clean way.  
+
+---
+
+#### 🆚 Delta Tables vs Snowflake Tables  
+
+| Aspect | Delta Tables (Databricks / Delta Lake) | Snowflake Tables (Snowflake DB) |
+|--------|-----------------------------------------|---------------------------------|
+| **Underlying Tech** | Built on Apache Parquet + transaction log (`_delta_log`). | Proprietary cloud-native database, stores data in optimized micro-partitions. |
+| **Where it Lives** | Stored in your cloud storage (S3, ADLS, GCS) with Delta format. | Stored inside Snowflake-managed storage (you don’t see raw files). |
+| **Format** | Open-source format (Delta Lake). Files can be read by Spark, Pandas, Presto, etc. | Proprietary format, only accessible through Snowflake. |
+| **ACID Transactions** | ✅ Supported (thanks to `_delta_log`). | ✅ Supported natively. |
+| **Schema Evolution** | ✅ Supported (can add/drop columns, merge schemas). | ✅ Supported (`ALTER TABLE`). |
+| **Performance Optimizations** | - Data skipping <br> - **Z-order clustering** <br> - Caching in Databricks | - Automatic clustering <br> - Micro-partition pruning <br> - Query result caching |
+| **Compute & Storage** | Decoupled: you choose compute (Databricks clusters, Spark, etc.) separate from cloud storage. | Decoupled: compute (virtual warehouses) and storage are fully managed by Snowflake. |
+| **Scaling** | Scales with Spark cluster size. | Scales elastically with virtual warehouses (auto-suspend / auto-resume). |
+| **Data Sharing** | Share by exposing storage (Parquet/Delta files) or Databricks Delta Sharing. | Native **Snowflake Secure Data Sharing** (no data movement, metadata-based). |
+| **Openness** | Open-source (Delta Lake) → can be read outside Databricks. | Proprietary → locked inside Snowflake. |
+| **Best For** | - Lakehouse architecture (data lakes + warehouses). <br> - Large-scale ETL/ELT on raw/semi-structured data. <br> - When you want open format + flexibility. | - Cloud data warehouse use cases. <br> - BI/reporting with SQL. <br> - When you want fully managed simplicity with zero infra ops. |
+
+---
+
+## ⚡ Key Differences in Philosophy  
+
+- **Delta Tables (Databricks)** → An open **Lakehouse** format sitting on top of your cloud storage, great for data engineers and ML/AI workloads.  
+- **Snowflake Tables** → A closed **data warehouse** system, great for business intelligence and SQL analytics.  
+
+---
+
+## ✅ Example Use Cases  
+
+- **Use Delta if:** you want an open format, heavy Spark ML pipelines, streaming + batch unification, or to avoid vendor lock-in.  
+- **Use Snowflake if:** your org is SQL-heavy, BI-focused, and you want zero infra management.  
