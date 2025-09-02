@@ -210,7 +210,7 @@ Infra management refers to the **administration of compute, storage, networking,
 - Performance tuning (partitioning, caching, indexing)  
 - Monitoring & cost optimization  
 
-👉 **Snowflake** → serverless, auto-managed infra.  
+👉 **Snowflake** → serverless, auto-managed infra.  </br>
 👉 **Databricks/Delta** → user controls infra (clusters, jobs, tuning).  
 
 ### Another Perspective
