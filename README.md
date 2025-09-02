@@ -340,6 +340,8 @@ Awesome question 🙌 — comparing Delta tables (Databricks) vs Snowflake table
 - **Use Delta if:** you want an open format, heavy Spark ML pipelines, streaming + batch unification, or to avoid vendor lock-in.  
 - **Use Snowflake if:** your org is SQL-heavy, BI-focused, and you want zero infra management.  
 
+---
+## Difference b/w PySpark and SparkSQL
 
 ## 🆚 PySpark vs Spark SQL
 
@@ -347,7 +349,7 @@ PySpark and Spark SQL are both integral components of **Apache Spark**, a distri
 
 ---
 
-## 🔹 PySpark
+### 🔹 PySpark
 **PySpark** is the Python API for Apache Spark. It allows users to interact with Spark's functionalities, including its distributed computing capabilities, using Python.  
 
 PySpark provides a rich set of APIs for working with Resilient Distributed Datasets (RDDs), DataFrames, and Datasets. It is commonly used for:
