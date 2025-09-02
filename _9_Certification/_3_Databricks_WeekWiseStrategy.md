@@ -1,79 +1,111 @@
-# Can we practice Auto ML over Databricks Free Edition?  
-### Also: Suggest the best source and strategy for preparing for Databricks certifications (GenAI Associate, Machine Learning Associate, Data Engineer Associate, followed by Professional Certifications).  
-If they can be ranked based on difficulty, please do that as well.  
+# 📅 3-Month Study Plan for Databricks Certifications  
+(GenAI Associate → Data Engineer Associate → Machine Learning Associate)
 
 ---
 
-## ✅ Answer
+## 🔹 Month 1 → GenAI Associate (Foundation in LLMs & GenAI)  
+**Goal**: Get certified quickly, build confidence, understand Databricks GenAI stack.
 
-### 1️⃣ AutoML on Databricks Free Edition
-- **Databricks AutoML** (the built-in low-code ML feature) is available only on **paid tiers (Standard/Premium/Enterprise)**, **not** on the Free Community Edition.  
-- On **Free Edition**, you can still:
-  - Use **MLlib (Spark ML)** pipelines manually for classification/regression.  
-  - Build AutoML-like workflows by integrating **Hyperopt**, **MLflow**, or open-source tools like **FLAML** or **Auto-sklearn**.  
-  - Train small models on structured datasets, log experiments with **MLflow**, and simulate hyperparameter sweeps.  
-- ✅ If your main goal is **learning** → Free Edition is enough.  
-- ✅ For **cert exam prep**, Spark ML, MLflow, and feature engineering are more important than AutoML.  
-- ⚠️ For true Databricks AutoML practice → you’ll need a **paid trial (14-day)** or a **work/school Databricks account**.  
+### Week 1  
+- Create/free Databricks Community Edition account.  
+- Complete **Databricks Generative AI Fundamentals** course (Academy).  
+- Learn: Basics of LLMs, embeddings, vector databases, MLflow for LLMs.  
+- Practice: Run simple Python notebooks → experiment with OpenAI/Hugging Face models locally in Databricks.  
 
----
-
-### 2️⃣ Databricks Certifications: Best Strategy  
-
-Here’s a roadmap with **certifications in logical order** and their **relative difficulty ranking**:
-
-#### 🥇 Entry Level
-1. **Databricks Generative AI Fundamentals (Associate)**  
-   - *Level*: Easiest  
-   - *Focus*: Intro to LLMs, prompt engineering, vector databases, MLflow for LLMs.  
-   - *Prep*: Databricks free learning modules + documentation. Mostly conceptual, very light coding.  
-
-2. **Databricks Data Engineer Associate**  
-   - *Level*: Easy → Medium  
-   - *Focus*: Spark SQL, Delta Lake basics, ETL design, ingestion, transformations.  
-   - *Prep*: Practice notebooks in Community Edition, Delta Live Tables concepts, Medallion Architecture.  
-
-#### 🥈 Intermediate
-3. **Databricks Machine Learning Associate**  
-   - *Level*: Medium  
-   - *Focus*: ML pipelines, MLflow tracking/registry, feature store, model deployment.  
-   - *Prep*:  
-     - Build small models in PySpark/MLflow.  
-     - Review MLflow, Feature Store, AutoML concepts.  
-     - Study Databricks ML runtime features.  
-
-#### 🥉 Advanced / Professional
-4. **Databricks Data Engineer Professional**  
-   - *Level*: Harder  
-   - *Focus*: Advanced Spark performance tuning, Delta Lake internals, streaming pipelines, scaling.  
-   - *Prep*: Real hands-on with partitioning, optimization, Z-Ordering, Structured Streaming.  
-
-5. **Databricks Machine Learning Professional**  
-   - *Level*: Hardest  
-   - *Focus*: End-to-end ML lifecycle, productionization, advanced MLflow, distributed training, advanced AutoML, MLOps.  
-   - *Prep*: Requires **real project experience** (beyond CE).  
+### Week 2  
+- Review **Vector Search + RAG concepts** (simulate with FAISS in Python on Free Edition).  
+- Build a mini-project:  
+  - Load a text dataset (e.g., Wikipedia extract).  
+  - Embed with Hugging Face model.  
+  - Search embeddings with cosine similarity.  
+- Revise practice quizzes from Academy.  
+- Take the **GenAI Associate exam**.  
 
 ---
 
-### 🔢 Difficulty Ranking (easiest → hardest)
-1. GenAI Associate  
-2. Data Engineer Associate  
-3. Machine Learning Associate  
-4. Data Engineer Professional  
-5. Machine Learning Professional  
+## 🔹 Month 2 → Data Engineer Associate (Spark + Delta Foundations)  
+**Goal**: Build solid Spark + Delta skills.
+
+### Week 3  
+- Start **Data Engineer Associate Learning Path** (Databricks Academy).  
+- Learn: Medallion Architecture, Databricks workspace basics, Spark DataFrame fundamentals.  
+- Practice in CE:  
+  - Load CSV/JSON into DataFrames.  
+  - Transform using Spark SQL & PySpark.  
+  - Save as Delta tables.  
+
+### Week 4  
+- Deep dive into **Delta Lake features**: ACID transactions, schema enforcement, time travel.  
+- Practice:  
+  - Insert, update, delete from Delta tables.  
+  - Version rollback.  
+  - Simple ETL pipeline → bronze → silver → gold tables.  
+
+### Week 5  
+- Focus on **Data ingestion + transformations**.  
+- Practice:  
+  - Autoloader (simulate in CE with batch ingestion).  
+  - Partitioning and optimization.  
+  - SQL queries for joins, aggregations, window functions.  
+- End of Week 5 → Take **mock/practice exams**.  
+
+### Week 6  
+- Revise **job orchestration, workflows, and security basics** (conceptual, since CE doesn’t allow full workflows).  
+- Review all practice tests + error notes.  
+- Take the **Data Engineer Associate exam**.  
 
 ---
 
-### ✅ Strategy for Success
-- **Step 1**: Start with **GenAI Associate** (conceptual, quick win).  
-- **Step 2**: Move to **Data Engineer Associate** (builds Spark & Delta foundation).  
-- **Step 3**: Take **ML Associate** (applies Spark + MLflow).  
-- **Step 4–5**: Attempt **Professional** certs once comfortable (require deeper hands-on).  
+## 🔹 Month 3 → Machine Learning Associate (MLflow + ML in Databricks)  
+**Goal**: Learn ML workflow, experiment tracking, feature engineering.
+
+### Week 7  
+- Start **Machine Learning Associate Learning Path** (Academy).  
+- Learn: MLflow basics → tracking, logging params/metrics, model registry.  
+- Practice in CE:  
+  - Train a scikit-learn logistic regression.  
+  - Log metrics + models with MLflow.  
+
+### Week 8  
+- Feature engineering + model training with PySpark ML.  
+- Practice:  
+  - Load dataset (Titanic / Wine Quality).  
+  - Split train/test.  
+  - Build Spark ML pipeline (VectorAssembler + RandomForestClassifier).  
+  - Log with MLflow.  
+
+### Week 9  
+- Learn: Feature Store concepts (simulate manually with Delta tables in CE).  
+- Practice:  
+  - Save engineered features as Delta.  
+  - Reuse in another model training.  
+- Study deployment basics (conceptual in CE, since serving is not available).  
+
+### Week 10  
+- Revise Academy course + review MLflow API docs.  
+- End of Week 10 → Take **mock/practice exams**.  
+
+### Week 11  
+- Fill gaps:  
+  - Review weak topics (model lifecycle, MLflow registry).  
+  - Do at least 2 full timed mock exams.  
+
+### Week 12  
+- Light revision of all notes.  
+- Take the **Machine Learning Associate exam**. 🎯  
 
 ---
 
-### 📚 Best Sources
-- **Databricks Academy (free courses)** → official prep for each exam.  
-- **Databricks Documentation** → Delta Lake, Spark SQL, MLflow.  
-- **Practice Exams (official + community GitHub repos)** → check readiness.  
-- **Hands-on in Free Edition** → Spark, Delta, MLflow basics.  
+# 🔑 Key Resources (All Free)  
+- **Databricks Academy** → Official prep for each cert.  
+- **Databricks Community Edition** → Hands-on practice.  
+- **Databricks Documentation** → Delta Lake, MLflow, Spark SQL.  
+- **Sample Datasets** → Titanic, NYC Taxi, Iris, MovieLens.  
+- **Community GitHub repos** → Free practice questions & labs.  
+
+---
+
+# 🚦 Milestone Exams Timeline  
+- **End of Week 2** → GenAI Associate Exam ✅  
+- **End of Week 6** → Data Engineer Associate Exam ✅  
+- **End of Week 12** → Machine Learning Associate Exam ✅  
