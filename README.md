@@ -14,6 +14,7 @@
   - [Visualization (ASCII Art)](#ascii-diagram-art-version)
 - [Z-Order Clustering](#z-order-clustering)
 - [Snowflake Table vs Delta Lake Tables](#difference-between-delta-tables-and-snowflake-tables)
+- [PySpark vs SparkSQL](#pySpark-vs-spark-sQL)
 
 ---
 
@@ -338,3 +339,59 @@ Awesome question 🙌 — comparing Delta tables (Databricks) vs Snowflake table
 
 - **Use Delta if:** you want an open format, heavy Spark ML pipelines, streaming + batch unification, or to avoid vendor lock-in.  
 - **Use Snowflake if:** your org is SQL-heavy, BI-focused, and you want zero infra management.  
+
+
+### PySpark vs Spark SQL
+
+PySpark and Spark SQL are both integral components of **Apache Spark**, a distributed computing framework for big data processing, but they serve different purposes and offer different approaches to data manipulation.
+
+---
+
+## 🔹 PySpark
+**PySpark** is the Python API for Apache Spark. It allows users to interact with Spark's functionalities, including its distributed computing capabilities, using Python.  
+
+PySpark provides a rich set of APIs for working with Resilient Distributed Datasets (RDDs), DataFrames, and Datasets. It is commonly used for:
+
+- **General-purpose data processing**: Performing complex transformations, aggregations, and analyses on large datasets.  
+- **Machine learning**: Utilizing Spark MLlib for various machine learning tasks.  
+- **Graph processing**: Leveraging GraphX for graph-parallel computation.  
+- **Stream processing**: Building real-time data processing pipelines with Spark Streaming.  
+
+---
+
+## 🔹 Spark SQL
+**Spark SQL** is a Spark module specifically designed for **structured data processing**. It enables users to interact with Spark using SQL-like queries and provides a DataFrame API for programmatic manipulation of structured data.  
+
+Spark SQL is particularly useful for:
+
+- **SQL-savvy users**: Allowing data analysts and engineers familiar with SQL to query and manipulate data in Spark.  
+- **Integrating with existing SQL infrastructure**: Connecting to external data sources like Hive and executing HiveQL queries.  
+- **Schema inference and data sources**: Automatically inferring schemas from various data sources and providing a unified way to access them.  
+
+---
+
+## 🔑 Key Differences
+
+The core difference lies in their approach to data interaction:
+
+### 1. Language/Interface  
+- **PySpark** → Primarily utilizes Python code and its DataFrame API for data manipulation, offering a programmatic and object-oriented approach.  
+- **Spark SQL** → Focuses on SQL syntax for querying and manipulating data, providing a declarative approach.  
+
+### 2. Target Audience  
+- **PySpark** → Preferred by data engineers and developers who are comfortable with Python and require fine-grained control over data transformations and integrations with other Python libraries.  
+- **Spark SQL** → Often favored by data analysts and others who are more proficient in SQL and need to perform ad-hoc queries and analysis on structured data.  
+
+### 3. Flexibility and Control  
+- **PySpark** → Offers greater flexibility and control over complex data transformations and custom logic due to its programmatic nature.  
+- **Spark SQL** → More constrained by the limitations of SQL syntax but excels in readability and ease of use for standard SQL operations.  
+
+---
+
+## 📝 Summary
+In essence:  
+
+- **PySpark** provides the comprehensive Python interface to Spark's entire ecosystem.  
+- **Spark SQL** is a specialized module within Spark that brings the power of SQL to big data processing.  
+
+👉 They can be used **independently or in conjunction**, depending on the specific task and the user’s skillset.  
