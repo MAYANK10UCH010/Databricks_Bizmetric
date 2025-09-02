@@ -238,6 +238,26 @@ flowchart TD
     B --> C[Gold: Aggregated Data Warehouse Layer]
     C --> D[BI Tools: PowerBI, Tableau, ML Models]
 ```
+### ASCII Diagram (art version)
+             ┌─────────────────────────┐
+             │     BI Tools / ML       │
+             │  (Tableau, PowerBI, AI) │
+             └───────────▲─────────────┘
+                         │
+              ┌──────────┴───────────┐
+              │   Gold Layer (DW)    │
+              │ Curated, Aggregated  │
+              └──────────▲───────────┘
+                         │
+              ┌──────────┴───────────┐
+              │  Silver Layer (Ref.) │
+              │ Clean, Standardized  │
+              └──────────▲───────────┘
+                         │
+              ┌──────────┴───────────┐
+              │  Bronze Layer (Raw)  │
+              │ Logs, JSON, CSV, Img │
+              └──────────────────────┘
 
 ### Z-order Clustering
 
