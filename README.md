@@ -3,6 +3,17 @@
 📺 **YouTube Channel:**  
 [Databricks Playlist](https://www.youtube.com/watch?v=yd51vbzA570&list=PLz-qytj7eIWWRz_1hFSleVBwZAoD1eTqU&index=2)
 
+# 📑 Data Lakehouse Notes
+
+## 📌 Table of Contents
+- [Abbreviations](#abbreviations)
+- [Infra Management](#infra-management)
+- [Lakehouse Architecture](#lakehouse-architecture)
+  - [Medallion Architecture](#medallion-architecture)
+  - [Visualization (Mermaid Diagram)](#mermaid-diagram)
+  - [Visualization (ASCII Art)](#ascii-diagram-art-version)
+- [Z-Order Clustering](#z-order-clustering)
+
 ---
 
 ## 📌 Topics for Separate Videos
@@ -31,6 +42,10 @@
  - Mosiac AI - Gen AI Using Databricks
  - MLOps Concepts on Databricks
 - AI/BI Dashboard along with Giene
+
+
+---
+
 
 # Roadmap
 # 🚀 Databricks + AI Roadmap
@@ -167,8 +182,58 @@ A structured roadmap to get started with:
 - 🧠 [Databricks Academy Courses](https://academy.databricks.com/)
 
 ---
+## Concepts
+Lakehouse Architecture : Data Lake + Data Warehouse
+Medallion Architecture : Bronze, Silver, Gold
+Mermaid Diagram :
+ASCII Diagram (art version):
+
+
 ## Abbreviations
-ACID : (Atomicity, Consistency, Isolation, and Durability) architecture   </br>
-GDPR : General Data Protection and Regulation                             </br>
-CCPA : California Consumer Privacy Act                                    </br>
-CDC  : Change Data Capture                                                </br>
+- **ACID** : Atomicity, Consistency, Isolation, and Durability architecture   </br>
+- **GDPR** : General Data Protection Regulation                             </br>
+- **HIPAA** : Health Insurance Portability and Accountability Act           </br>
+- **CCPA** : California Consumer Privacy Act                                </br>
+- **CDC**  : Change Data Capture                                            </br>
+- **SCSS** : Sass CSS (Syntactically Awesome Style Sheets) - CSS extension language for web developers that adds features like variables, nesting, and mixins to make stylesheets more dynamic and maintainable </br>
+- **S3, ADLS, GCS** : Simple Storage Service (AWS), Azure Data Lake Storage, Google Cloud Storage </br>
+
+---
+
+## Infra Management
+Infra management refers to the **administration of compute, storage, networking, and governance** for data platforms.
+
+### 🔧 Examples:
+- Cluster provisioning & auto-scaling  
+- Storage management (S3, ADLS, GCS)  
+- Networking & security (IAM, VPC, encryption)  
+- Performance tuning (partitioning, caching, indexing)  
+- Monitoring & cost optimization  
+
+👉 **Snowflake** → serverless, auto-managed infra.  
+👉 **Databricks/Delta** → user controls infra (clusters, jobs, tuning).  
+
+---
+
+## Lakehouse Architecture
+A **Lakehouse** combines the low-cost, flexible storage of **Data Lakes** with the governance, performance, and SQL support of **Data Warehouses**.
+
+- **Data Lake** = Raw, cheap storage, no schema enforcement.  
+- **Data Warehouse** = Structured, expensive, BI-ready.  
+- **Lakehouse** = Unified platform with **ACID + open formats (Parquet, Delta, Iceberg)**.  
+
+---
+
+### Medallion Architecture
+- **Bronze Layer** → Raw data (CSV, JSON, IoT logs, images).  
+- **Silver Layer** → Cleaned, structured, de-duplicated data.  
+- **Gold Layer** → Aggregated, business-ready datasets for BI/ML.  
+
+---
+
+### Mermaid Diagram
+```mermaid
+flowchart TD
+    A[Bronze: Raw Data Lake] --> B[Silver: Clean, Structured Data]
+    B --> C[Gold: Aggregated Data Warehouse Layer]
+    C --> D[BI Tools: PowerBI, Tableau, ML Models]
