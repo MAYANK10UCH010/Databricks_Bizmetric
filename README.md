@@ -237,3 +237,20 @@ flowchart TD
     A[Bronze: Raw Data Lake] --> B[Silver: Clean, Structured Data]
     B --> C[Gold: Aggregated Data Warehouse Layer]
     C --> D[BI Tools: PowerBI, Tableau, ML Models]
+```
+
+### Z-order Clustering
+
+- Problem: Queries may scan all files if data is scattered (expensive & slow).
+- Solution: Z-order clustering co-locates related data in files (multi-dimensional index).
+
+####📌 Example:
+
+- Without Z-order: Query customer_id=123 scans 100 files.
+- With Z-order on customer_id: Only 5 files scanned → 20x faster.
+
+####🚀 Command in Databricks:
+```
+OPTIMIZE zomato_delta_table
+ZORDER BY (Country_Code, Rating_text)
+```
