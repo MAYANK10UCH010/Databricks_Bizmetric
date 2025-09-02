@@ -12,6 +12,7 @@
   - [Medallion Architecture](#medallion-architecture)
   - [Visualization (Mermaid Diagram)](#mermaid-diagram)
   - [Visualization (ASCII Art)](#ascii-diagram-art-version)
+- [ASCII(Art Version)](#ASCII Diagram (art version))
 - [Z-Order Clustering](#z-order-clustering)
 
 ---
