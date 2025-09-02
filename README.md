@@ -213,6 +213,33 @@ Infra management refers to the **administration of compute, storage, networking,
 👉 **Snowflake** → serverless, auto-managed infra.  
 👉 **Databricks/Delta** → user controls infra (clusters, jobs, tuning).  
 
+### Another Perspective
+
+1️⃣ What is Infra (Infrastructure) Management?
+
+In the context of data platforms (like Databricks, Snowflake, Hadoop clusters):
+Infra management = the set of tasks needed to keep the platform running, reliable, and scalable.
+
+#### 🔧Examples of Infra Management
+ - Cluster Provisioning & Scaling
+   -  Choosing VM size (CPU, RAM, GPU)
+   - Auto-scaling up/down with workload
+
+- Storage Setup
+  - Choosing cloud storage (S3, ADLS, GCS)
+  - Managing partitions, file formats, lifecycle policies
+
+- Networking & Security
+  - VPC, firewall rules, IAM roles, data encryption, compliance (GDPR, HIPAA)
+
+- Performance Tuning
+  - Optimizing partitions, caching, indexing, cluster utilization
+
+- Monitoring & Maintenance
+  - Cluster health, logs, costs, job retries, software patches
+
+👉 Snowflake → handles infra management automatically (serverless, you just choose “warehouse size”).
+👉 Databricks / Delta Lake → you (or admin) manage clusters, tuning, file optimization.
 ---
 
 ## Lakehouse Architecture
