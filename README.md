@@ -14,7 +14,7 @@
   - [Visualization (ASCII Art)](#ascii-diagram-art-version)
 - [Z-Order Clustering](#z-order-clustering)
 - [Snowflake Table vs Delta Lake Tables](#difference-between-delta-tables-and-snowflake-tables)
-- [PySpark vs SparkSQL](#pySpark-vs-spark-sQL)
+- [PySpark vs SparkSQL](#difference-between-pySpark-and-spark-sQL)
 
 ---
 
@@ -341,7 +341,7 @@ Awesome question 🙌 — comparing Delta tables (Databricks) vs Snowflake table
 - **Use Snowflake if:** your org is SQL-heavy, BI-focused, and you want zero infra management.  
 
 ---
-## Difference b/w PySpark and SparkSQL
+## Difference between PySpark and SparkSQL
 
 ## 🆚 PySpark vs Spark SQL
 
