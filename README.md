@@ -183,10 +183,10 @@ A structured roadmap to get started with:
 
 ---
 ## Concepts
-Lakehouse Architecture : Data Lake + Data Warehouse
-Medallion Architecture : Bronze, Silver, Gold
-Mermaid Diagram :
-ASCII Diagram (art version):
+Lakehouse Architecture : Data Lake + Data Warehouse  </br>
+Medallion Architecture : Bronze, Silver, Gold        </br>
+Mermaid Diagram :                                    </br>
+ASCII Diagram (art version):                         </br>
 
 
 ## Abbreviations
