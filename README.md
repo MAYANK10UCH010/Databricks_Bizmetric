@@ -310,7 +310,7 @@ Awesome question 🙌 — comparing Delta tables (Databricks) vs Snowflake table
 
 ---
 
-#### 🆚 Delta Tables vs Snowflake Tables  
+## 🆚 Delta Tables vs Snowflake Tables  
 
 | Aspect | Delta Tables (Databricks / Delta Lake) | Snowflake Tables (Snowflake DB) |
 |--------|-----------------------------------------|---------------------------------|
@@ -341,7 +341,7 @@ Awesome question 🙌 — comparing Delta tables (Databricks) vs Snowflake table
 - **Use Snowflake if:** your org is SQL-heavy, BI-focused, and you want zero infra management.  
 
 
-### PySpark vs Spark SQL
+## 🆚 PySpark vs Spark SQL
 
 PySpark and Spark SQL are both integral components of **Apache Spark**, a distributed computing framework for big data processing, but they serve different purposes and offer different approaches to data manipulation.
 
