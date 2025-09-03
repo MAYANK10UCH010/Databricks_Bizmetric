@@ -7,6 +7,8 @@
 
 ## 📌 Table of Contents
 - [Abbreviations](#abbreviations)
+- [Definitions](#Defintions)
+  - [Data Streaming and Data Blobs](#data-streaming-&-blobs)
 - [Infra Management](#infra-management)
 - [Lakehouse Architecture](#lakehouse-architecture)
   - [Medallion Architecture](#medallion-architecture)
@@ -201,7 +203,10 @@ ASCII Diagram (art version):                         </br>
 - **S3, ADLS, GCS** : Simple Storage Service (AWS), Azure Data Lake Storage, Google Cloud Storage </br>
 - **Unity Catalogue** : centralized data governance layer, It allows for granular security control and managing data and metadata assets in a unified system within Databricks, _In addition, it provides **access control, audits, logs** and **lineage**_ </br>
 ---
-
+## Definitions
+### Data Streaming & Data Blobs
+- Data streaming's significance lies in enabling real-time, low-latency processing of continuously generated data, crucial for instant insights in finance, IoT, and more, while data blobs are Binary Large Objects that store unstructured binary data like images and videos in object storage, supporting both random access and some streaming scenarios like media playback but not the continuous real-time flow of data streaming.
+---
 ## Infra Management
 Infra management refers to the **administration of compute, storage, networking, and governance** for data platforms.
 
