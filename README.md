@@ -194,6 +194,7 @@ ASCII Diagram (art version):                         </br>
 
 
 ## Abbreviations
+- **DLT** : Delta Live Tables   </br>
 - **ACID** : Atomicity, Consistency, Isolation, and Durability architecture   </br>
 - **GDPR** : General Data Protection Regulation                             </br>
 - **HIPAA** : Health Insurance Portability and Accountability Act           </br>
