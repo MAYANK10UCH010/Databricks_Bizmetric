@@ -8,7 +8,7 @@
 ## 📌 Table of Contents
 - [Abbreviations](#abbreviations)
 - [Definitions](#definitions)
-  - [Data Streaming and Data Blobs](#data-streaming-&-data-blobs)
+  - [Data Streaming and Data Blobs](#data-streaming-and-data-blobs)
 - [Infra Management](#infra-management)
 - [Lakehouse Architecture](#lakehouse-architecture)
   - [Medallion Architecture](#medallion-architecture)
