@@ -199,7 +199,7 @@ ASCII Diagram (art version):                         </br>
 - **CDC**  : Change Data Capture                                            </br>
 - **SCSS** : Sass CSS (Syntactically Awesome Style Sheets) - CSS extension language for web developers that adds features like variables, nesting, and mixins to make stylesheets more dynamic and maintainable </br>
 - **S3, ADLS, GCS** : Simple Storage Service (AWS), Azure Data Lake Storage, Google Cloud Storage </br>
-
+- **Unity Catalogue** : centralized data governance layer, It allows for granular security control and managing data and metadata assets in a unified system within Databricks, _In addition, it provides **access control, audits, logs** and **lineage**_ </br>
 ---
 
 ## Infra Management
