@@ -202,6 +202,8 @@ ASCII Diagram (art version):                         </br>
 - **SCSS** : Sass CSS (Syntactically Awesome Style Sheets) - CSS extension language for web developers that adds features like variables, nesting, and mixins to make stylesheets more dynamic and maintainable </br>
 - **S3, ADLS, GCS** : Simple Storage Service (AWS), Azure Data Lake Storage, Google Cloud Storage </br>
 - **Unity Catalogue** : centralized data governance layer, It allows for granular security control and managing data and metadata assets in a unified system within Databricks, _In addition, it provides **access control, audits, logs** and **lineage**_ </br>
+<img width="1549" height="816" alt="image" src="https://github.com/user-attachments/assets/e0ba3fe7-a036-4f0b-939d-b15d0ef7a95f" />
+
 ---
 ## Definitions
 ### Data Streaming and Data Blobs
