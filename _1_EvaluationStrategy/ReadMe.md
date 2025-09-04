@@ -1,9 +1,9 @@
 ## Four Courses
-1. Generative AI
-   1.1. Application Development
-   1.2 Solution Development
-   1.3 Application Evaluation and Governance
-   1.4 Application Deployment and Monitoring
+- Generative AI
+   - Application Development
+   - Solution Development
+   - Application Evaluation and Governance
+   - Application Deployment and Monitoring
    
    
    
