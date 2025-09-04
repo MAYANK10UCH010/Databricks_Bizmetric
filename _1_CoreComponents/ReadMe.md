@@ -1,6 +1,6 @@
 ### Concepts within Prompt Engineering
 - Zero and Few Shot Prompting
-- Prompt Chaining
+- Prompt Chaining vs Chain of thought Prompting (CoT)
 - Prompt Injection
 - Meta Prompts
 - Prompts Safety (Guardrails)
