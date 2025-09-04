@@ -1,6 +1,6 @@
 ### Concepts within Prompt Engineering
 - Zero and Few Shot Prompting
-- Prompt Chaining vs Chain of thought Prompting (CoT)
+- Prompt Chaining vs Chain of thought Prompting (CoT). Why CoT depends on model flavour. Does difference comes from its working principle? 
 - Prompt Injection
 - Meta Prompts
 - Prompts Safety (Guardrails)
