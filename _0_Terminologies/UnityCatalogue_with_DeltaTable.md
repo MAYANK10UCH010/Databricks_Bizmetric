@@ -71,6 +71,18 @@ spark.sql("GRANT SELECT ON TABLE company_data.gold.customer_360 TO `marketing_an
 spark.sql("GRANT SELECT ON TABLE company_data.silver.customers_clean TO `data_scientist`")
 ```
 ### 🔹In Summary
-      -🔹Delta Lake: Gives trustworthy, ACID-compliant data storage.
+      -🔹Delta Lake: Gives trustworthy, ACID-compliant data storage, time-travel,Z ordering. 
       -🔹Unity Catalog: Provides governance, access control, lineage, and security over that Delta data.
       -🔹Together → They enable a secure, compliant, enterprise-scale Lakehouse for GenAI + BI + ML workloads.
+
+### 🔹Delta Lake Core Capabilities
+
+- ACID transactions → guarantees consistency in concurrent reads/writes.
+- Schema enforcement & evolution → prevents corrupt/incompatible data.
+- Time travel → query data at previous versions using transaction logs.
+
+### 🔹Data reliability → built-in handling for late arriving or batch/stream data. Performance Features (optional but common)
+
+- Z-Ordering → a technique Delta Lake supports to improve query performance on large datasets (by colocating related data).
+- Data skipping → improves read performance by skipping irrelevant files.
+- Compaction (OPTIMIZE) → combines small files for efficiency.
