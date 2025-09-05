@@ -70,8 +70,7 @@ AS SELECT * FROM silver.customers_clean
 spark.sql("GRANT SELECT ON TABLE company_data.gold.customer_360 TO `marketing_analyst`")
 spark.sql("GRANT SELECT ON TABLE company_data.silver.customers_clean TO `data_scientist`")
 ```
-🔹 In Summary
-
-   🔹Delta Lake: Gives trustworthy, ACID-compliant data storage.
-   🔹Unity Catalog: Provides governance, access control, lineage, and security over that Delta data.
-   🔹Together → They enable a secure, compliant, enterprise-scale Lakehouse for GenAI + BI + ML workloads.
+###🔹 In Summary
+      🔹Delta Lake: Gives trustworthy, ACID-compliant data storage.
+      🔹Unity Catalog: Provides governance, access control, lineage, and security over that Delta data.
+      🔹Together → They enable a secure, compliant, enterprise-scale Lakehouse for GenAI + BI + ML workloads.
