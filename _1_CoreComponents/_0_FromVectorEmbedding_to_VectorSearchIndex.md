@@ -57,6 +57,7 @@
 
 ---
 ---
+
 # Q&A: How is Vector Search Index / Vector Index Calculated and Saved?
 
 ## Question
@@ -83,4 +84,25 @@ How is Vector Search index / Vector Index Calculated and saved? Provide me a bit
 
 Imagine you have 6 embeddings in 2D (for simplicity):  
 
+  ● ● ●  Cluster 1
+         (Cats)
+         
+    ● ●  Cluster 2
+         (Dogs)
+
+       ● Cluster 3
+         (Cars)
+
+
+
+- **IVF index**: Computes centroids → assigns vectors to nearest centroid.  
+- **HNSW index**: Creates a graph connecting “nearest neighbors.”  
+- **Flat index**: Just stores raw points → search = linear scan.  
+
+---
+
+### ✅ Summary
+- Index = *algorithm + data structure* built on embeddings.  
+- It’s **calculated by clustering, graph-building, or compressing** vectors.  
+- It’s **saved in the vector database** (memory/disk) along with raw embeddings + metadata.  
 
