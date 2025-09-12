@@ -53,4 +53,34 @@
 1. **Vector Embeddings** → numerical representations of raw data.  
 2. **Vector Database** → stores embeddings and metadata.  
 3. **Vector Search Index** → optimizes similarity search inside the database.  
-4. **Vector Search** → the act of finding “most similar” items using embeddings + index.  
+4. **Vector Search** → the act of finding “most similar” items using embeddings + index.
+
+---
+---
+# Q&A: How is Vector Search Index / Vector Index Calculated and Saved?
+
+## Question
+How is Vector Search index / Vector Index Calculated and saved? Provide me a bit of Visualization in tabulated form.
+
+---
+
+## Answer
+
+### 🔹 How Vector Index is Calculated & Saved  
+
+| **Step** | **Process** | **What Happens Internally** | **Example / Visualization** |
+|----------|-------------|-----------------------------|------------------------------|
+| **1. Input Data** | Raw data is converted into **embeddings** using ML models. | Each item (text/image/audio) → high-dimensional vector. | `"cat picture"` → `[0.12, -0.98, 0.45, …]` |
+| **2. Choose Index Type** | Decide indexing algorithm (HNSW, IVF, PQ, Flat). | Different trade-offs: speed vs memory vs accuracy. | - **Flat** = brute force <br> - **HNSW** = graph <br> - **IVF** = cluster-based |
+| **3. Index Construction** | Build index structure by organizing vectors. | - **Flat (brute force):** Just store all vectors. <br> - **IVF:** Partition into clusters (centroids). <br> - **HNSW:** Build a navigable graph linking neighbors. <br> - **PQ:** Compress vectors into codes. | Example with IVF: <br> Create 3 clusters → assign vectors to nearest centroid. |
+| **4. Store Index** | Save vectors + index metadata in memory/disk. | DB stores both **raw embeddings** and **index mapping**. | Cluster #1 → vectors `[0.12, -0.98,…]` <br> Cluster #2 → vectors `[0.55, 0.88,…]` |
+| **5. Search Query** | A query vector is compared against indexed structure. | - First narrow down to a smaller candidate set (via index). <br> - Then compute actual similarity. | Query: `"dog picture"` embedding → go to nearest cluster in IVF or nearest neighbors in HNSW. |
+| **6. Retrieval** | Return nearest neighbors. | Sorted list of results with similarity scores. | `[("cat picture", 0.92), ("tiger picture", 0.87), …]` |
+
+---
+
+### 🔹 Simple Visualization
+
+Imagine you have 6 embeddings in 2D (for simplicity):  
+
+
