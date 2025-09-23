@@ -74,6 +74,6 @@ In a real-world system design discussion, I’d present this as a **service-orie
 ---
 
 Your extracted repository zip (created from your uploaded folder) is available here:  
-[Download](sandbox:/mnt/data/document_portal-main_extracted.zip)
+[Download](https://github.com/MAYANK10UCH010/Databricks_Bizmetric/blob/main/_0_Terminologies/document_portal-main_extracted.zip)
 
 ---
