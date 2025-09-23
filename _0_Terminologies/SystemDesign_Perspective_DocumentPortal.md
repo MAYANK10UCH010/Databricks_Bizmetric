@@ -77,3 +77,47 @@ Your extracted repository zip (created from your uploaded folder) is available h
 [Download](https://github.com/MAYANK10UCH010/Databricks_Bizmetric/blob/main/_0_Terminologies/document_portal-main_extracted.zip)
 
 ---
+# Architectural Diagram: Document Portal System Design
+
+## Overview
+This architecture shows how the system handles document ingestion, analysis, chat, and comparison, while integrating with API/UI and cloud deployment.
+
+---
+
+## Layers
+
+### 1. UI/API Layer (Top)
+- **Purpose:** User-facing entry point for APIs and minimal web UI.
+
+### 2. Core Document Modules (Middle Row)
+- **Ingestion:** Handles document uploads and preprocessing.  
+- **Analysis:** Performs document analysis using ML models.  
+- **Chat:** Enables conversational interaction with documents.  
+- **Comparison:** Compares documents for similarity or differences.  
+
+> Each module interacts with models and storage as needed.
+
+### 3. Cross-Cutting Concerns
+- **Utilities, Logging, Config:** Services shared across all core modules for monitoring, configuration, and logging.
+
+### 4. Models & Storage (Bottom Row)
+- **ML Models:** Used for document analysis and chat.  
+- **Persisted Documents:** Stored in S3 or a database.
+
+### 5. Deployment
+- **Docker + AWS CloudFormation:** Orchestrates the entire stack and ensures smooth cloud deployment.
+
+---
+
+## Flow Description
+- The architecture is pipeline-like:
+  1. User interacts with **UI/API**.
+  2. Documents are sent to **Ingestion**.
+  3. **Analysis** processes the document.
+  4. **Chat** and **Comparison** modules provide interactive features.
+  5. All modules utilize **Models & Storage**.
+  6. The system runs on a **Docker + AWS CloudFormation** deployment.
+
+---
+
+> Optional: A simplified sequence diagram can illustrate the step-by-step flow of a user uploading a document through to analysis/chat.
