@@ -72,9 +72,9 @@ This repository is essentially a **document processing platform** designed with 
 In a real-world system design discussion, I’d present this as a **service-oriented monolithic system** that is **modular, cloud-ready, and ML-integrated**, with a clear path to **microservice decomposition** as scale demands.
 
 ---
-Download
+
 
 Your extracted repository zip (created from your uploaded folder) is available here:
-[sandbox:/mnt/data/document_portal-main_extracted.zip](sandbox:/mnt/data/document_portal-main_extracted.zip)
+[Download](sandbox:/mnt/data/document_portal-main_extracted.zip)
 
 ---
