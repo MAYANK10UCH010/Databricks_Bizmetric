@@ -75,5 +75,6 @@ In a real-world system design discussion, I’d present this as a **service-orie
 Download
 
 Your extracted repository zip (created from your uploaded folder) is available here:
-sandbox:/mnt/data/document_portal-main_extracted.zip
+[sandbox:/mnt/data/document_portal-main_extracted.zip](sandbox:/mnt/data/document_portal-main_extracted.zip)
+
 ---
