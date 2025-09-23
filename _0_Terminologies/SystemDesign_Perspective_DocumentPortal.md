@@ -73,8 +73,7 @@ In a real-world system design discussion, I’d present this as a **service-orie
 
 ---
 
-
-Your extracted repository zip (created from your uploaded folder) is available here:
+Your extracted repository zip (created from your uploaded folder) is available here:  
 [Download](sandbox:/mnt/data/document_portal-main_extracted.zip)
 
 ---
