@@ -2,6 +2,9 @@
 - The **five components of AI** are: Learning, Reasoning, Problem-Solving, Perception, and Natural Language Processing/Linguistic Intelligence.
 - Top-K and Top-P are **sampling methods** in Large Language Models (LLMs) used to control the next word chosen by limiting the candidate pool. Top-K selects a fixed number, K, of the most probable tokens, whereas Top-P (or **nucleus sampling**) selects tokens by accumulating probabilities until a threshold, P, is met, dynamically adjusting the pool size
 
+## Essentials
+[Go to Cost Comparison](#cost-comparison-spark-vs-conventional-compute)
+
 ---
 ## Question  
 **How much Spark and SQL shall be known by a Data Scientist?**
@@ -135,3 +138,24 @@ Cost_conventional = Instance_hours × Cost_per_instance_hour
 - **Spark**: know enough to write efficient transformations, avoid shuffles, and distribute tasks sensibly.  
 - Leave cluster sizing, infra tuning, and advanced scheduling to **Data Engineers**.  
 
+---
+---
+
+## SQL vs Spark: Quick Comparison
+
+| Aspect                  | SQL / Conventional Tools (Pandas, R, Warehouse SQL) | Spark (Clustered, Distributed) |
+|--------------------------|------------------------------------------------------|--------------------------------|
+| **Scale**               | Single machine (GBs of data)                         | Distributed (TBs–PBs of data)  |
+| **Runtime**              | Limited by CPU/RAM of one node                       | Parallel execution across cluster |
+| **Cost model**           | Instance hours × rate                                | Executors × cores × hours × rate |
+| **Performance tuning**   | Indexing, query optimization                         | Partitioning, shuffles, caching |
+| **Ease of use**          | Simple, familiar SQL/Pandas                          | Requires cluster, PySpark API   |
+| **Best for**             | Medium-sized data, quick prototyping                 | Very large datasets, production-scale ETL/ML |
+| **Overhead**             | Minimal setup                                        | Cluster management (Databricks, EMR, etc.) |
+
+---
+
+## Stopping Point for DS
+- **SQL**: go deep, since it’s your daily knife.  
+- **Spark**: know enough to write efficient transformations, avoid shuffles, and distribute tasks sensibly.  
+- Leave cluster sizing, infra tuning, and advanced scheduling to **Data Engineers**.  
