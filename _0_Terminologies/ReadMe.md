@@ -3,8 +3,10 @@
 - Top-K and Top-P are **sampling methods** in Large Language Models (LLMs) used to control the next word chosen by limiting the candidate pool. Top-K selects a fixed number, K, of the most probable tokens, whereas Top-P (or **nucleus sampling**) selects tokens by accumulating probabilities until a threshold, P, is met, dynamically adjusting the pool size
 
 ## Essentials
-[Cost Comparison for Compute](#cost-comparison-spark-vs-conventional-compute)
-[SQL vs Spark](#sQL-vs-spark:-quick-comparison)
+- [Cost Comparison for Compute](#cost-comparison-spark-vs-conventional-compute)</br>
+- [SQL vs Spark](#sQL-vs-spark:-quick-comparison)</br>
+- [Syllabusfor DS](#data-scientist’s-spark-&-SQL-syllabus)</br>
+- [Stopping Point for DS so that to avoid collision with DE](#stopping-point-for-dS)</br>
 ---
 ## Question  
 **How much Spark and SQL shall be known by a Data Scientist?**
