@@ -7,6 +7,12 @@
 - [SQL vs Spark](#sQL-vs-spark:-quick-comparison)</br>
 - [Syllabusfor DS](#data-scientist’s-spark-&-SQL-syllabus)</br>
 - [Stopping Point for DS so that to avoid collision with DE](#stopping-point-for-dS)</br>
+
+- [Cost Comparison for Compute](#cost-comparison-spark-vs-conventional-compute)  
+- [SQL vs Spark](#sql-vs-spark-quick-comparison)  
+- [Syllabus for DS](#data-scientists-spark--sql-syllabus)  
+- [Stopping Point for DS (to avoid collision with DE)](#stopping-point-for-ds)  
+
 ---
 ## Question  
 **How much Spark and SQL shall be known by a Data Scientist?**
