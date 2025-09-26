@@ -2,6 +2,7 @@
 - The **five components of AI** are: Learning, Reasoning, Problem-Solving, Perception, and Natural Language Processing/Linguistic Intelligence.
 - Top-K and Top-P are **sampling methods** in Large Language Models (LLMs) used to control the next word chosen by limiting the candidate pool. Top-K selects a fixed number, K, of the most probable tokens, whereas Top-P (or **nucleus sampling**) selects tokens by accumulating probabilities until a threshold, P, is met, dynamically adjusting the pool size
 
+<a id="top"></a>
 ## Essentials
 - [Cost Comparison for Compute](#cost-comparison-spark-vs-conventional-compute)  
 - [SQL vs Spark](#sql-vs-spark-quick-comparison)  
@@ -44,6 +45,7 @@ The “how much Spark and SQL does a Data Scientist need” question is a bit li
 It’s like driving: SQL is learning to steer, brake, accelerate—core to movement. Spark is like learning to drive a truck vs a car: same principles, just scaled up. 
 ---
 # Data Scientist’s Spark & SQL Syllabus
+[⬆ Back to Top](#top)
 
 ## SQL Skills (Core)
 ✅ SELECT, WHERE, ORDER BY, GROUP BY, HAVING  
@@ -94,7 +96,7 @@ Spark distributes tasks automatically across cluster executors, but you need to 
   df = df.repartition(200, "user_id")
 ---
 ### Cost Comparision
-
+[⬆ Back to Top](#top)
 
 ---
 
@@ -137,6 +139,7 @@ Cost_conventional = Instance_hours × Cost_per_instance_hour
 ---
 
 ## Stopping Point for DS
+[⬆ Back to Top](#top)
 - **SQL**: go deep, since it’s your daily knife.  
 - **Spark**: know enough to write efficient transformations, avoid shuffles, and distribute tasks sensibly.  
 - Leave cluster sizing, infra tuning, and advanced scheduling to **Data Engineers**.  
@@ -145,6 +148,7 @@ Cost_conventional = Instance_hours × Cost_per_instance_hour
 ---
 
 ## SQL vs Spark: Quick Comparison
+[⬆ Back to Top](#top)
 
 | Aspect                  | SQL / Conventional Tools (Pandas, R, Warehouse SQL) | Spark (Clustered, Distributed) |
 |--------------------------|------------------------------------------------------|--------------------------------|
@@ -157,7 +161,7 @@ Cost_conventional = Instance_hours × Cost_per_instance_hour
 | **Overhead**             | Minimal setup                                        | Cluster management (Databricks, EMR, etc.) |
 
 ---
-
+[⬆ Back to Top](#top)
 ## Stopping Point for DS
 - **SQL**: go deep, since it’s your daily knife.  
 - **Spark**: know enough to write efficient transformations, avoid shuffles, and distribute tasks sensibly.  
