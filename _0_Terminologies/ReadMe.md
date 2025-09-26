@@ -4,7 +4,7 @@
 
 ## Essentials
 [Cost Comparison for Compute](#cost-comparison-spark-vs-conventional-compute)
-[SQL vs Spark](#sql-vs-spark:-quick-comparison)
+[SQL vs Spark](#sQL-vs-spark:-quick-comparison)
 ---
 ## Question  
 **How much Spark and SQL shall be known by a Data Scientist?**
