@@ -4,4 +4,4 @@ Patterns aren’t magical — they don’t make code “better” automatically.
 
 ### Conclusion
 
-Think of LLD patterns as the “grammar of object-oriented design.” Once you know them, you can write cleaner, modular, and more maintainable code.
+Think of LLD patterns as the “**_grammar of object-oriented design_**.” Once you know them, you can write cleaner, modular, and more maintainable code.
