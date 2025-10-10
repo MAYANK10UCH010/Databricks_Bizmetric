@@ -1,0 +1,153 @@
+
+Import these into `main.py` for clean, reusable code.
+
+---
+
+## 2. Custom/Advanced Data Structures
+
+### Q5: What is a linked list?
+**A:**  
+A linked list is a linear data structure where each element (node) points to the next.  
+It’s like a chain of people where each person knows who comes next.
+
+---
+
+### Q6: Is there a built-in linked list in Python?
+**A:**  
+No. You have to implement it using classes and nodes.
+
+---
+
+### Q7: What is a stack?
+**A:**  
+A stack is a **LIFO (Last-In-First-Out)** structure.  
+Example: Stack of chairs — you can only add or remove from the top.
+
+---
+
+### Q8: What is a queue?
+**A:**  
+A queue is a **FIFO (First-In-First-Out)** structure.  
+Example: People standing in a line — first person in is the first out.
+
+---
+
+### Q9: What is a tree?
+**A:**  
+A tree is a hierarchical structure with a root and child nodes.  
+Example: File system, family tree.
+
+---
+
+### Q10: What is a graph?
+**A:**  
+A graph is a collection of nodes connected by edges.  
+Example: Social network, metro map.
+
+---
+
+## 3. Real-World Use Cases
+
+### Q11: Where are stacks used in real life?
+**A:**
+- Browser back button  
+- Undo/Redo in editors  
+
+---
+
+### Q12: Where are queues used?
+**A:**
+- Ticket booking systems  
+- Task scheduling  
+
+---
+
+### Q13: Where are graphs used?
+**A:**
+- Google Maps  
+- Social networks  
+- Recommendation systems  
+
+---
+
+## 4. Project: Task Management System
+
+### Q14: How did we use data structures in the project?
+**A:**
+- **List** → Store tasks  
+- **Dictionary** → Store users  
+- **Queue** → Manage task assignment order  
+- **Stack** → Track task history  
+- **Graph** → Handle task dependencies (optional)
+
+---
+
+### Q15: What was the project structure?
+**A:**
+
+```
+task_management_system/
+│
+├── models/
+│ ├── task.py
+│ ├── user.py
+│ ├── queue.py
+│ ├── stack.py
+│ └── graph.py
+│
+├── services/
+│ ├── task_service.py
+│ └── user_service.py
+│
+├── main.py
+├── requirements.txt
+└── README.md
+```
+
+
+
+---
+
+### Q16: How did we implement the queue?
+**A:**  
+We used `collections.deque` for efficient append and pop operations from both ends.
+
+---
+
+### Q17: How did we track task history?
+**A:**  
+Using a **stack**. When a task is completed, it’s pushed to the stack.
+
+---
+
+## 5. Common Questions from the Session
+
+### Q18: Why learn data structures for data science?
+**A:**
+- Efficient data handling  
+- Better algorithm design  
+- Required for tech interviews (FAANG, etc.)
+
+---
+
+### Q19: Should I use Jupyter or VS Code for projects?
+**A:**  
+Use **VS Code** for projects (modular, scalable).  
+Jupyter is great for learning and exploration.
+
+---
+
+### Q20: How long does it take to learn DSA?
+**A:**  
+Around **3–6 months** with consistent practice.
+
+---
+
+## 📦 ZIP Summary
+
+This “ZIP” contains:
+- ✅ Built-in vs. Custom data structures  
+- ✅ Real-world examples  
+- ✅ Modular coding approach  
+- ✅ Full project structure & logic  
+- ✅ Interview & learning tips  
