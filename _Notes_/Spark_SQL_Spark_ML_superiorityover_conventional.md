@@ -260,50 +260,45 @@ Traditional SQL → export → CSV → Pandas → sklearn.
 
 Example: real-time dashboard over Kafka:
 
+```
 stream_df = spark \
   .readStream \
   .format("kafka") \
   .load()
 
 stream_df.selectExpr("CAST(value AS STRING)")
-
-
+```
 Traditional SQL = outdated or expensive add-ons.
 
 ---
 
 ## ⭐ Putting Everything Together—Example End-to-End Spark Use Case
-🎯 Business Case: Predict customer churn from 2 TB telco logs
-Spark does:
+🎯 **Business Case**: Predict customer churn from 2 TB telco logs
+**Spark does:**
 
-Spark SQL
-
+1. Spark SQL
+```
 SELECT user, COUNT(*) AS calls
 FROM raw_logs
 GROUP BY user
+```
+  → distributed query on 2 TB.
 
+2. Spark ML feature engineering
 
-→ distributed query on 2 TB.
+- StringIndexer
+- VectorAssembler
+- StandardScaler
+- OneHotEncoder
 
-Spark ML feature engineering
-
-StringIndexer
-
-VectorAssembler
-
-StandardScaler
-
-OneHotEncoder
-
-Spark ML model training
-
+3. Spark ML model training
+```
 model = lr.fit(features_df)
+```
+  → runs across 200 cores.
 
-
-→ runs across 200 cores.
-
-Spark ML streaming inference
-→ predict churn for new logs every second.
+4. Spark ML streaming inference
+  → predict churn for new logs every second.
 
 Conventional stack (MySQL + Pandas + sklearn) cannot handle even 5% of this pipeline.
 
