@@ -1,0 +1,1 @@
+<img width="1065" height="3126" alt="partner-academy databricks com_learn_learning-plans_315_generative-ai-engineering-pathway_generated_by=274087 hash=c8f9f9f2cb57897bc03a777d1fdc0624b068e94b" src="https://github.com/user-attachments/assets/561c960f-3f44-4044-901d-5914c8e8309c" />
