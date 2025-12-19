@@ -9,11 +9,11 @@ We consider a **retirement decumulation problem** under uncertainty.
 
 Let:
 
-- \( T \) = retirement horizon in years (e.g., \( T = 35 \))
-- \( W_t \) = withdrawal (expense) at year \( t \)
-- \( C_t \) = portfolio value at start of year \( t \)
-- \( R_t \) = random portfolio return in year \( t \)
-- \( \pi_t \) = inflation rate in year \( t \)
+- $( T \) = retirement horizon in years (e.g., \( T = 35 $))
+- $( W_t \) = withdrawal (expense) at year \( t $)
+- $( C_t \) = portfolio value at start of year \( t $)
+- $( R_t \) = random portfolio return in year \( t $)
+- $( \pi_t \) = inflation rate in year \( t $)
 
 The system evolves as:
 
@@ -27,7 +27,7 @@ $$
 C_t \ge 0 \quad \forall t \in [0,T]
 $$
 
-**Ruin occurs** if \( \exists t \) such that \( C_t \le 0 \).
+**Ruin occurs** if $( \exists t \) such that \( C_t \le 0 $).
 
 ---
 
@@ -89,7 +89,7 @@ $$
 W_0 = E_0
 $$
 
-where \( E_0 \) is current annual expense.
+where $( E_0 $) is current annual expense.
 
 Inflation-indexed withdrawal:
 
@@ -103,9 +103,9 @@ This creates **exponentially increasing withdrawals**, a key destabilizing force
 
 ## 4. Monte Carlo Simulation Framework
 
-We simulate \( N = 1000 \) independent paths.
+We simulate $( N = 1000 $) independent paths.
 
-For each simulation \( s \in \{1,2,\dots,N\} \):
+For each simulation $( s \in \{1,2,\dots,N\} $):
 
 1. Sample:
    - $( \{R_t^{(s)}\}_{t=1}^{T} $)
