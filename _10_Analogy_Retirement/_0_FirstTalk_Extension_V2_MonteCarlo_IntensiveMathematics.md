@@ -73,11 +73,11 @@ Inflation is modeled independently as:
 
 $$
 \pi_t \sim \mathcal{N}(\mu_\pi, \sigma_\pi^2)
-$4
+$$
 
 Indian parameters:
-- $( \mu_\pi \approx 0.06 \)
-- $( \sigma_\pi \approx 0.015 \)
+- $( \mu_\pi \approx 0.06 $)
+- $( \sigma_\pi \approx 0.015 $)
 
 ---
 
