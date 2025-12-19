@@ -117,3 +117,84 @@ for simulation in range(1000):
             break
 
 calculate_survival_probability()
+```
+
+Teaching Interpretation
+
+No single future exists
+
+Bad early years matter more than bad late years
+
+Retirement planning = probability management
+
+### 4️⃣ Indian Tax + NPS + EPF Tailoring
+| Aspect            | Impact                             |
+| ----------------- | ---------------------------------- |
+| EPF               | Tax-free, low volatility           |
+| NPS               | Partial equity, annuity constraint |
+| MF LTCG           | 10% tax above ₹1L                  |
+| FD                | Fully taxable                      |
+| Medical inflation | Very high                          |
+
+Typical Indian Retirement Buckets
+| Bucket       | Purpose              | Tax             |
+| ------------ | -------------------- | --------------- |
+| EPF          | Base safety          | Tax-free        |
+| NPS Tier-I   | Longevity hedge      | Partial taxable |
+| Equity MF    | Inflation protection | LTCG            |
+| Debt MF / FD | Stability            | Taxable         |
+
+
+**Withdrawal Order (Critical Teaching Point)**
+1. EPF interest + partial principal
+2. Equity MF (LTCG optimized)
+3. Debt funds / FD
+4. NPS annuity (mandatory income floor)
+
+> Order of withdrawal is as important as asset allocation
+
+---
+**NPS Reality Check (India)**
+
+- 60% lump sum
+- 40% compulsory annuity
+- Annuity returns are low
+---
+**Teach disciples:**
+
+> NPS = longevity insurance, not growth engine
+
+### 5️⃣ Integrated Teaching Summary (Guru View)
+Simple Rules → Deeper Truth
+| Rule | Teaching Meaning           |
+| ---- | -------------------------- |
+| ×30  | Optimistic future          |
+| ×40  | Realistic discipline       |
+| ×50  | Insurance against bad luck |
+
+---
+
+**Final Teaching Mantra**
+
+> Retirement planning is not about being right
+> It is about not being ruined
+
+### How to Use This with Disciples
+
+- Start with tables → intuition
+- Move to glide paths → behavior
+- Show Monte Carlo logic → uncertainty
+- End with Indian constraints → realism
+
+This sequence builds financial wisdom, not formulas.
+
+---
+
+If you want, next I can:
+- Convert this into a **one-page chalkboard teaching flow**
+- Create **Excel formulas row by row**
+- Build a **real Python notebook** step-by-step
+- Adapt this into **Upanishad-style financial sutras** (for disciples)
+
+Just tell me how you wish to teach it.
+
