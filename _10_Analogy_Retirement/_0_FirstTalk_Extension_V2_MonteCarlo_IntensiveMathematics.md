@@ -158,15 +158,32 @@ $$
 By the **Law of Large Numbers**:
 
 $$
-$hat{P}_{\text{survival}} \xrightarrow[]{a.s.} P_{\text{true}}
-$quad \text{as } N \to \infty
+$ hat{P}_{\text{survival}} \xrightarrow[]{a.s.} P_{\text{true}}
+$ quad \text{as } N \to \infty
 $$
+
+
+$$
+\hat{P}_{\text{survival}}
+=
+\frac{1}{N} \sum_{s=1}^{N} I^{(s)}
+$$
+
+By the **Law of Large Numbers**:
+
+$$
+\hat{P}_{\text{survival}}
+\xrightarrow[]{\text{a.s.}}
+P_{\text{true}}
+\quad \text{as } N \to \infty
+$$
+
 
 ---
 
 ## 8. Statistical Properties of the Estimator
 
-Since \( I^{(s)} \sim \text{Bernoulli}(p) \),
+Since $( I^{(s)} \sim \text{Bernoulli}(p) $),
 
 $$
 \text{Var}(\hat{P}) = \frac{p(1-p)}{N}
