@@ -17,15 +17,15 @@ Let:
 
 The system evolves as:
 
-\[
+$$
 C_{t+1} = (C_t - W_t)(1 + R_t)
-\]
+$$
 
 with the constraint:
 
-\[
+$$
 C_t \ge 0 \quad \forall t \in [0,T]
-\]
+$$
 
 **Ruin occurs** if \( \exists t \) such that \( C_t \le 0 \).
 
@@ -37,33 +37,33 @@ C_t \ge 0 \quad \forall t \in [0,T]
 
 Let the portfolio consist of equity and debt.
 
-\[
+$$
 R_t = w_e R^e_t + w_d R^d_t
-\]
+$$
 
 where:
-- \( w_e + w_d = 1 \)
+- $( w_e + w_d = 1 $)
 
 #### Equity Returns
 
 Empirically modeled as:
 
-\[
+$$
 R^e_t \sim \mathcal{N}(\mu_e, \sigma_e^2)
-\]
+$$
 
 Typical Indian long-term parameters (nominal):
-- \( \mu_e \approx 0.12 \)
-- \( \sigma_e \approx 0.20 \)
+- $( \mu_e \approx 0.12 $)
+- $( \sigma_e \approx 0.20 $)
 
 #### Debt Returns
 
-\[
+$$
 R^d_t \sim \mathcal{N}(\mu_d, \sigma_d^2)
-\]
+$$
 
-- \( \mu_d \approx 0.06 \)
-- \( \sigma_d \approx 0.03 \)
+- $( \mu_d \approx 0.06 $)
+- $( \sigma_d \approx 0.03 $)
 
 ---
 
@@ -71,9 +71,9 @@ R^d_t \sim \mathcal{N}(\mu_d, \sigma_d^2)
 
 Inflation is modeled independently as:
 
-\[
+$$
 \pi_t \sim \mathcal{N}(\mu_\pi, \sigma_\pi^2)
-\]
+$4
 
 Indian parameters:
 - \( \mu_\pi \approx 0.06 \)
@@ -85,17 +85,17 @@ Indian parameters:
 
 Initial annual withdrawal:
 
-\[
+$$
 W_0 = E_0
-\]
+$$
 
 where \( E_0 \) is current annual expense.
 
 Inflation-indexed withdrawal:
 
-\[
+$$
 W_t = E_0 \prod_{i=1}^{t} (1 + \pi_i)
-\]
+$$
 
 This creates **exponentially increasing withdrawals**, a key destabilizing force.
 
@@ -120,16 +120,16 @@ For each simulation \( s \in \{1,2,\dots,N\} \):
 
 For scenario \( s \):
 
-\[
+$$
 C_{t+1}^{(s)} = \left(C_t^{(s)} - W_t^{(s)}\right)
 \left(1 + w_e R^e_t + w_d R^d_t\right)
-\]
+$$
 
 with initial condition:
 
-\[
+$$
 C_0^{(s)} = C_0
-\]
+$$
 
 ---
 
@@ -137,31 +137,29 @@ C_0^{(s)} = C_0
 
 Define indicator variable:
 
-\[
+$$
 I^{(s)} =
 \begin{cases}
 1, & \text{if } C_t^{(s)} > 0 \quad \forall t \le T \\
 0, & \text{otherwise}
 \end{cases}
-\]
-
+$$
 ---
 
 ## 7. Estimated Probability of Retirement Success
 
 The Monte Carlo estimator of survival probability:
 
-\[
+$$
 \hat{P}_{\text{survival}} =
 \frac{1}{N} \sum_{s=1}^{N} I^{(s)}
-\]
-
+$$
 By the **Law of Large Numbers**:
 
-\[
+$$
 \hat{P}_{\text{survival}} \xrightarrow[]{a.s.} P_{\text{true}}
 \quad \text{as } N \to \infty
-\]
+$$
 
 ---
 
@@ -169,15 +167,15 @@ By the **Law of Large Numbers**:
 
 Since \( I^{(s)} \sim \text{Bernoulli}(p) \),
 
-\[
+$$
 \text{Var}(\hat{P}) = \frac{p(1-p)}{N}
-\]
+$$
 
 For \( N = 1000 \), worst-case variance:
 
-\[
+$$
 \text{SE} \le \sqrt{\frac{0.25}{1000}} \approx 1.6\%
-\]
+$$
 
 Thus:
 > **1000 simulations give statistically meaningful confidence**
@@ -188,15 +186,15 @@ Thus:
 
 Let cumulative return:
 
-\[
+$$
 \prod_{t=1}^{T} (1 + R_t)
-\]
+$$
 
 Even if:
 
-\[
+$$
 \mathbb{E}[R_t] = \text{constant}
-\]
+$$
 
 the distribution of \( C_T \) depends on **ordering** because withdrawals occur *before compounding*.
 
@@ -214,15 +212,15 @@ Monte Carlo captures this **path dependence**.
 
 Define ruin time:
 
-\[
+$$
 \tau = \inf \{ t : C_t \le 0 \}
-\]
+$$
 
 The retirement problem becomes estimating:
 
-\[
+$$
 P(\tau > T)
-\]
+$$
 
 This is a **first-passage time problem**, analytically intractable → Monte Carlo required.
 
