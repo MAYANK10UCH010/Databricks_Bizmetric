@@ -152,57 +152,6 @@ $$
 The Monte Carlo estimator of survival probability:
 
 $$
-$hat{P}_{\text{survival}} =
-$frac{1}{N} \sum_{s=1}^{N} I^{(s)}
-$$
-By the **Law of Large Numbers**:
-
-
-$$
-\hat{P}_{\text{survival}}
-=
-\frac{1}{N} \sum_{s=1}^{N} I^{(s)}
-$$
-
-By the **Law of Large Numbers**:
-
-$$
-\hat{P}_{\text{survival}}
-\xrightarrow[]{\text{a.s.}}
-P_{\text{true}}
-\quad \text{as } N \to \infty
-$$
-
-
----
-
-## 8. Statistical Properties of the Estimator
-
-Since $( I^{(s)} \sim \text{Bernoulli}(p) $),
-
-
-$$
-\operatorname{Var}(\hat{P})
-$$
-=
-$$
-\frac{p(1-p)}{N}
-$$
-
-For $( N = 1000 $), worst-case standard error:
-
-$$
-\operatorname{SE}
-\le
-\sqrt{\frac{0.25}{1000}}
-\approx 1.6\%
-$$
-
-## 7. Estimated Probability of Retirement Success
-
-The Monte Carlo estimator of survival probability:
-
-$$
 \hat{P}_{\text{survival}} =
 \frac{1}{N} \sum_{s=1}^{N} I^{(s)}
 $$
