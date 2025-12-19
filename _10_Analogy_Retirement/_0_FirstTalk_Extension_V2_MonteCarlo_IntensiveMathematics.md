@@ -152,14 +152,14 @@ $$
 The Monte Carlo estimator of survival probability:
 
 $$
-\hat{P}_{\text{survival}} =
-\frac{1}{N} \sum_{s=1}^{N} I^{(s)}
+$hat{P}_{\text{survival}} =
+$frac{1}{N} \sum_{s=1}^{N} I^{(s)}
 $$
 By the **Law of Large Numbers**:
 
 $$
-\hat{P}_{\text{survival}} \xrightarrow[]{a.s.} P_{\text{true}}
-\quad \text{as } N \to \infty
+$hat{P}_{\text{survival}} \xrightarrow[]{a.s.} P_{\text{true}}
+$quad \text{as } N \to \infty
 $$
 
 ---
