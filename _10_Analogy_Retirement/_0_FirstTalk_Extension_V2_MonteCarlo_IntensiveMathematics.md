@@ -140,8 +140,8 @@ Define indicator variable:
 $$
 I^{(s)} =
 \begin{cases}
-1, & $text{if } C_t^{(s)} > 0 \quad \forall t \le T \\
-0, & $text{otherwise}
+1, & \text{if } C_t^{(s)} > 0 \quad \forall t \le T \\
+0, & \text{otherwise}
 \end{cases}
 $$
 
