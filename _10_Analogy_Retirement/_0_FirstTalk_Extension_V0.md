@@ -32,9 +32,9 @@ All assumptions are stated explicitly.
 
 Expenses are **not constant**.
 
-\[
+$$
 \text{Expense}_t = \text{Expense}_0 \times (1 + \text{Inflation})^t
-\]
+$$
 
 - ₹6 lakh today
 - After 20 years (6% inflation): ~₹19.2 lakh
@@ -48,9 +48,9 @@ Expenses are **not constant**.
 
 Instead of using nominal returns, we think in **real terms**:
 
-\[
+$$
 \text{Real Return} = \text{Nominal Return} - \text{Inflation}
-\]
+$$
 
 Approximate blended portfolio:
 - Nominal ≈ 9–10%
