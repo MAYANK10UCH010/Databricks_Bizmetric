@@ -76,8 +76,8 @@ $$
 $4
 
 Indian parameters:
-- \( \mu_\pi \approx 0.06 \)
-- \( \sigma_\pi \approx 0.015 \)
+- $( \mu_\pi \approx 0.06 \)
+- $( \sigma_\pi \approx 0.015 \)
 
 ---
 
