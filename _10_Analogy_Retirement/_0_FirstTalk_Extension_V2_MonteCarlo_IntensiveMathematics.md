@@ -180,31 +180,16 @@ $$
 
 Since $( I^{(s)} \sim \text{Bernoulli}(p) $),
 
-$$
-\text{Var}(\hat{P}) = \frac{p(1-p)}{N}
-$$
-
-For $( N = 1000 \), worst-case variance:
-
-$$
-\text{SE} \le \sqrt{\frac{0.25}{1000}} \approx 1.6\%
-$$
-
-
-
-
-
-
-
-Since \( I^{(s)} \sim \text{Bernoulli}(p) \),
 
 $$
 \operatorname{Var}(\hat{P})
+$$
 =
+$$
 \frac{p(1-p)}{N}
 $$
 
-For \( N = 1000 \), worst-case standard error:
+For $( N = 1000 $), worst-case standard error:
 
 $$
 \operatorname{SE}
@@ -212,10 +197,6 @@ $$
 \sqrt{\frac{0.25}{1000}}
 \approx 1.6\%
 $$
-
-
-
-
 
 
 
