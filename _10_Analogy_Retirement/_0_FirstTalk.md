@@ -95,6 +95,10 @@ This is a **major structural gap**.
 
 Because it directly corresponds to a **2% withdrawal rate**:
 
+$$
+\text{Corpus} = \frac{\text{Annual Expenses}}{\text{Withdrawal Rate}} = \frac{1}{0.02} = 50
+$$
+
 \[
 \text{Corpus} = \frac{\text{Annual Expenses}}{\text{Withdrawal Rate}} = \frac{1}{0.02} = 50
 \]
