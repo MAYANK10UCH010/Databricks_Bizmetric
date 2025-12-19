@@ -108,9 +108,9 @@ We simulate \( N = 1000 \) independent paths.
 For each simulation \( s \in \{1,2,\dots,N\} \):
 
 1. Sample:
-   - \( \{R_t^{(s)}\}_{t=1}^{T} \)
-   - \( \{\pi_t^{(s)}\}_{t=1}^{T} \)
-2. Compute withdrawals \( \{W_t^{(s)}\} \)
+   - $( \{R_t^{(s)}\}_{t=1}^{T} $)
+   - $( \{\pi_t^{(s)}\}_{t=1}^{T} $)
+2. Compute withdrawals $( \{W_t^{(s)}\} $)
 3. Evolve wealth recursively
 4. Record survival or ruin
 
@@ -118,7 +118,7 @@ For each simulation \( s \in \{1,2,\dots,N\} \):
 
 ## 5. Recursive Wealth Dynamics (Core Equation)
 
-For scenario \( s \):
+For scenario $( s $):
 
 $$
 C_{t+1}^{(s)} = \left(C_t^{(s)} - W_t^{(s)}\right)
@@ -200,9 +200,9 @@ the distribution of \( C_T \) depends on **ordering** because withdrawals occur 
 
 This violates commutativity:
 
-\[
+$$
 (W \circ R_1 \circ R_2) \neq (W \circ R_2 \circ R_1)
-\]
+$$
 
 Monte Carlo captures this **path dependence**.
 
@@ -231,7 +231,7 @@ This is a **first-passage time problem**, analytically intractable → Monte Car
 The system involves:
 - Stochastic multiplicative growth
 - Deterministic but exponential withdrawals
-- Inequality constraints \( C_t \ge 0 \)
+- Inequality constraints $( C_t \ge 0 $)
 
 This forms a **non-linear stochastic difference equation** with absorbing boundary.
 
@@ -242,7 +242,7 @@ Hence:
 
 ## 12. Interpretation of Results (Example)
 
-| Corpus Rule | Estimated \( \hat{P}_{\text{survival}} \) |
+| Corpus Rule | Estimated $( \hat{P}_{\text{survival}} $) |
 |-----------|--------------------------------|
 | ×30 | 0.55 |
 | ×40 | 0.78 |
